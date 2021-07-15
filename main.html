@@ -1,105 +1,151 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <script
-      src="https://kit.fontawesome.com/25d75193a7.js"
-      crossorigin="anonymous"
-    ></script>
 
-    <title>Reservia - Accueil</title>
-  </head>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/25d75193a7.js" crossorigin="anonymous"></script>
 
-  <body>
-    <header>
-      <img src="statics/logo/reservia@3x.png" class="" alt="Logo Reservia" />
-    </header>
+  <title>Reservia - Accueil</title>
+</head>
 
-    <nav>
-      <ul>
-        <li><a href="#accomodationsanchor">Hébergements</a></li>
-        <li><a href="#activityanchor">Activités</a></li>
-        <li><a href="#">S'inscrire</a></li>
-      </ul>
-    </nav>
+<body>
+  <header>
+    <img src="statics/logo/reservia@3x.png" class="" alt="Logo Reservia" />
+  </header>
 
-    <section>
-      <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-      <p>En plein centre ville ou en pleine nature</p>
+  <nav>
+    <ul>
+      <li><a href="#accomodationsanchor">Hébergements</a></li>
+      <li><a href="#activityanchor">Activités</a></li>
+      <li><a href="#">S'inscrire</a></li>
+    </ul>
+  </nav>
 
-      <form method="post" action="traitement.js">
-        <p>
-          <i class="fas fa-map-marker-alt"></i>
-          <input
-            type="search"
-            name="searchbox"
-            id="searchbox"
-            value="Marseille, France"
-          />
-          <input type="submit" value="Rechercher" />
-        </p>
-      </form>
-      <div class="filters">
-        <p><strong>Filtres</strong></p>
+  <section>
+    <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+    <p>En plein centre ville ou en pleine nature</p>
 
-      </div>
-    </section>
+    <form method="post" action="traitement.js">
+      <p>
+        <i class="fas fa-map-marker-alt"></i>
+        <input type="search" name="searchbox" id="searchbox" value="Marseille, France" />
+        <input type="submit" value="Rechercher" />
+      </p>
+    </form>
+    <div class="filters">
+      <p><strong>Filtres</strong></p>
 
-    <section id="accomodationsanchor">
-      <h1>hébergement a marseille</h1>
+    </div>
+  </section>
+
+  <section id="accomodationsanchor">
+    <h1>hébergement a marseille</h1>
+
+    <a href="#">
       <div class="resultcard">
-        <a href="#">
-      <img src="statics/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="auberge de la canebiére">
-
+        <img src="statics/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="auberge de la canebiére">
+        <p><span class="bold">Auberge de la Cannebière</span></p>
+        <p>Nuit à partir de <span class="bold">25€</span></p>
+        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+          class="fas fa-star grey"></i>
       </div>
     </a>
-    </section>
 
-    <section id="popularanchor">
-      <h1>Les plus populaires</h1>
-    </section>
-
-    <section id="activityanchor">
-      <h1>Activités a Marseille</h1>
-    </section>
-
-    <footer>
-      <div class="leftfooter">
-        <p><strong>A propos</strong></p>
-        <p>Fonctionnement du site</p>
-        <p>Conditions générales de vente</p>
-        <p>Données et confidentialité</p>
+    <a href="#">
+      <div class="resultcard">
+        <img src="statics/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Hôtel du port">
+        <p><span class="bold">Hôtel du port</span></p>
+        <p>Nuit à partir de 52<span class="bold">€</span></p>
+        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+          class="fas fa-star"></i>
       </div>
+    </a>
 
-      <div class="middlefooter">
-        <p><strong>Nos hébergements</strong></p>
-        <p>Charte qualité</p>
-        <p>Soumettre votre hôtel</p>
+    <a href="#">
+      <div class="resultcard">
+        <img src="statics/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Hôtel des mouettes">
+        <p><span class="bold">Hôtel des mouettes</span></p>
+        <p>Nuit à partir de 76<span class="bold">€</span></p>
+        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+          class="fas fa-star grey"></i>
       </div>
+    </a>
 
-      <div class="rightfooter">
-        <p><strong>Assistance</strong></p>
-        <p>Centre d'aide</p>
-        <p>Nous contacter</p>
+    <a href="#">
+      <div class="resultcard">
+        <img src="statics/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Hôtel de la mer">
+        <p><span class="bold">Hôtel de la mer</span></p>
+        <p>Nuit à partir de 46<span class="bold">€</span></p>
+        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+          class="fas fa-star grey"></i><i class="fas fa-star grey"></i>
       </div>
-    </footer>
-  </body>
+    </a>
 
-  <!-- A VOIR ! -->
-  <label class="switch">
-    <input type="checkbox" id="togBtn" />
-    <div class="slider round">
-      <!--ADDED HTML -->
-      <span class="on">ON</span>
-      <span class="off">OFF</span>
+    <a href="#">
+      <div class="resultcard">
+        <img src="statics/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Auberge Le Panier">
+        <p><span class="bold">Auberge Le Panier</span></p>
+        <p>Nuit à partir de <span class="bold">23€</span></p>
+        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+          class="fas fa-star grey"></i>
+      </div>
+    </a>
 
-      <!--END-->
+    <a href="#">
+      <div class="resultcard">
+        <img src="statics/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Hôtel chez Amina">
+        <p><span class="bold">Hôtel chez Amina</span></p>
+        <p>Nuit à partir de 96<span class="bold">€</span></p>
+        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+          class="fas fa-star"></i>
+      </div>
+    </a>
+    
+    <p><span class="bold">Afficher plus</span></p>
+  </section>
+
+  <section id="popularanchor">
+    <h1>Les plus populaires</h1>
+  </section>
+
+  <section id="activityanchor">
+    <h1>Activités a Marseille</h1>
+  </section>
+
+  <footer>
+    <div class="leftfooter">
+      <p><strong>A propos</strong></p>
+      <p>Fonctionnement du site</p>
+      <p>Conditions générales de vente</p>
+      <p>Données et confidentialité</p>
     </div>
-  </label>
+
+    <div class="middlefooter">
+      <p><strong>Nos hébergements</strong></p>
+      <p>Charte qualité</p>
+      <p>Soumettre votre hôtel</p>
+    </div>
+
+    <div class="rightfooter">
+      <p><strong>Assistance</strong></p>
+      <p>Centre d'aide</p>
+      <p>Nous contacter</p>
+    </div>
+  </footer>
+</body>
+
+<!-- A VOIR ! -->
+<label class="switch">
+  <input type="checkbox" id="togBtn" />
+  <div class="slider round">
+    <!--ADDED HTML -->
+    <span class="on">ON</span>
+    <span class="off">OFF</span>
+
+    <!--END-->
+  </div>
+</label>
 
 </html>
