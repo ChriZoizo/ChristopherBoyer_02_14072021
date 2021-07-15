@@ -7,14 +7,15 @@ a {
   color: black;
 }
 
-
-
 /* Class */
 
 .grey {
-  color:grey
+  color: gainsboro;
 }
 
+.fa-star {
+  color: blue;
+}
 p .bold {
   font-weight: bold;
 }
