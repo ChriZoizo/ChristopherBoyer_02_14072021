@@ -23,14 +23,12 @@ a {
 padding-top: 35px   /* PROBLEME !!  remet une marge au body*/
 }
 
-.grey {
-  color: gainsboro;
-}
-
 .fa-star {
   color: blue;
 }
-
+.grey {
+  color: rgb(212, 155, 155);
+}
 p .bold {
   font-weight: bold;
 }
