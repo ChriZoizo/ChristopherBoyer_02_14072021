@@ -11,37 +11,45 @@
 </head>
 
 <body>
+
+  <!-- Header -->
   <header>
     <img src="statics/logo/reservia@3x.png" class="logo" alt="Logo Reservia" />
 
 
   <nav>
    <div class="navbuttons">
-      <a href="#accomodationsanchor" class="selected"> Hébergements </a>
-      <a href="#activityanchor">Activités</a>
-      <a href="#"><strong>S'inscrire</strong></a>
+      <a href="#accomodations" class="selected blue"> Hébergements </a>
+      <a href="#activity">Activités</a>
+      <a href="#" class="blue"><strong>S'inscrire</strong></a>
     </div>
   </nav>
 </header>
 
+<!-- Search and filter -->
   <section>
     <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
     <p>En plein centre ville ou en pleine nature</p>
 
-    <form method="post" action="traitement.js">
+    <form method="post" action="traitement.js" class="searchform bb">
       <p>
-        <i class="fas fa-map-marker-alt"></i>
-        <input type="search" name="searchbox" id="searchbox" value="Marseille, France" />
-        <input type="submit" value="Rechercher" />
+        <label class="gpslogo">
+        <i class="fas fa-map-marker-alt"></i></label>
+        <input type="search" class="search-field bb" name="searchbox" id="searchbox" value="Marseille, France" />
+        <input type="submit" value="Rechercher" class="formbutton" />
       </p>
     </form>
     <div class="filters">
       <p><strong>Filtres</strong></p>
 
+
+    </div>
+    <div>
+    <i class="fas fa-info"></i> <span>Plus de 500 logements sont disponible dans cette ville</span>
     </div>
   </section>
-
-  <section id="accomodationsanchor">
+ <!-- Accomodations section-->
+  <section id="accomodations">
     <h1>Hébergement a Marseille</h1>
 
     <a href="#">
@@ -107,7 +115,8 @@
     <p><span class="bold">Afficher plus</span></p>
   </section>
 
-  <section id="popularanchor">
+  <!-- Popular section-->
+  <section id="popular">
     <header>
     <h1>Les plus populaires</h1>
     <i class="fas fa-chart-line"></i>
@@ -144,7 +153,7 @@
 
   </section>
 
-  <section id="activityanchor">
+  <section id="activity">
     <h1>Activités a Marseille</h1>
     <a href="#">
       <div class="largeactivitycard">
@@ -185,24 +194,24 @@
   </section>
 
   <footer>
-    <div class="leftfooter">
-      <p><strong>A propos</strong></p>
-      <p>Fonctionnement du site</p>
-      <p>Conditions générales de vente</p>
-      <p>Données et confidentialité</p>
-    </div>
+    <ul class="leftfooter">
+      <li><strong>A propos</strong></li>
+      <li>Fonctionnement du site</li>
+      <li>Conditions générales de vente</li>
+      <li>Données et confidentialité</li>
+    </ul>
 
-    <div class="middlefooter">
-      <p><strong>Nos hébergements</strong></p>
-      <p>Charte qualité</p>
-      <p>Soumettre votre hôtel</p>
-    </div>
+    <ul class="middlefooter">
+      <li><strong>Nos hébergements</strong></li>
+      <li>Charte qualité</li>
+      <li>Soumettre votre hôtel</li>
+    </ul>
 
-    <div class="rightfooter">
-      <p><strong>Assistance</strong></p>
-      <p>Centre d'aide</p>
-      <p>Nous contacter</p>
-    </div>
+    <ul class="rightfooter">
+      <li><strong>Assistance</strong></li>
+      <li>Centre d'aide</li>
+      <li>Nous contacter</li>
+    </ul>
   </footer>
 </body>
 
