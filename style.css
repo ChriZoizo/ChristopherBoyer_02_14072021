@@ -23,11 +23,11 @@ a {
 padding-top: 35px   /* PROBLEME !!  remet une marge au body*/
 }
 
-.fa-star {
-  color: blue;
+.blue {
+  color: #4287f5;
 }
 .grey {
-  color: rgb(212, 155, 155);
+  color: #d9d9d9;
 }
 p .bold {
   font-weight: bold;
