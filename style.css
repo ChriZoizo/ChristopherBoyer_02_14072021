@@ -92,7 +92,39 @@ p .bold {
   border-radius: 100px;
 }
 
+.filters {
+  display:flex;
+  align-items: center;
+  height: 35px
+}
+
+.fakeswitch {
+ display: flex;
+ align-items: center;
+  border: 2px solid #d9d9d9;
+height: 35px;
+border-radius: 30px;
+margin-left: 5%;
+}
+
+.fakeswitch:hover {
+  box-shadow: -4px 4px 2px black ;
+
+  transition: .4s;
+}
+
+.filtericon {
+padding: 12px ;
+background-color: #deebff;
+border-radius: 30px;
+}
+
+.filtername {
+  margin: 10px
+}
+
 /* Structure */
+
 
 
 header {
@@ -178,8 +210,7 @@ flex-wrap: wrap;
     -ms-transform: translateX(55px);
     transform: translateX(55px);
   }
-  
-  /*------ ADDED CSS ---------*/
+
    .on
    {
     display: none;
@@ -202,7 +233,6 @@ flex-wrap: wrap;
   input:checked + .slider .off
   {display: none;}
   
-  /*--------- END --------*/
   
   /* Rounded sliders */
   .slider.round {
@@ -212,3 +242,79 @@ flex-wrap: wrap;
   .slider.round:before {
     border-radius: 50%;}
 
+
+
+
+
+    #demoToggleSwitch .toggle-switch-check:empty ~ .toggle-switch-bar:after {
+      background-color: transparent;
+      background-image: url(/images/switch_button.png);
+      background-repeat: no-repeat;
+      background-size: 100%;
+      border-width: 0;
+      bottom: 0;
+      height: auto;
+      left: 2px;
+      top: 1px;
+      width: 22px;
+    }
+  
+    #demoToggleSwitch .toggle-switch-check:empty ~ .toggle-switch-bar:before {
+      background-color: transparent;
+      background-image: url(/images/switch_base.png);
+      background-repeat: no-repeat;
+      background-size: 100%;
+      border-radius: 20px;
+      border-width: 0;
+      width: 51px;
+    }
+  
+    #demoToggleSwitch .toggle-switch-check:empty ~ .toggle-switch-bar .toggle-switch-icon-off {
+      background-image: url(/images/switch_off_icon.png);
+      background-repeat: no-repeat;
+      background-size: 100%;
+      height: 15px;
+      left: 28px;
+      top: 4px;
+      width: 15px;
+    }
+  
+    #demoToggleSwitch .toggle-switch-check:checked ~ .toggle-switch-bar:after {
+      left: 26px;
+    }
+  
+    #demoToggleSwitch .toggle-switch-check:checked ~ .toggle-switch-bar .toggle-switch-icon-on {
+      background-image: url(/images/switch_on_icon.png);
+      background-repeat: no-repeat;
+      background-size: 100%;
+      height: 17px;
+      left: 5px;
+      top: 4px;
+      width: 17px;
+    }
+  
+    @media (min-width: 768px) {
+      #demoToggleSwitch .toggle-switch-check:empty ~ .toggle-switch-bar:after {
+        width: 30px;
+      }
+  
+      #demoToggleSwitch .toggle-switch-check:empty ~ .toggle-switch-bar:before {
+        width: 68px;
+      }
+  
+      #demoToggleSwitch .toggle-switch-check:empty ~ .toggle-switch-bar .toggle-switch-icon-off {
+        height: 17px;
+        left: 40px;
+        top: 7px;
+        width: 17px;
+      }
+  
+      #demoToggleSwitch .toggle-switch-check:checked ~ .toggle-switch-bar:after {
+        left: 35px;
+      }
+  
+      #demoToggleSwitch .toggle-switch-check:checked ~ .toggle-switch-bar .toggle-switch-icon-on {
+        left: 12px;
+        top: 8px;
+      }
+    }
