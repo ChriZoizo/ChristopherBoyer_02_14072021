@@ -2,9 +2,17 @@
 
 /*ajouter un @media au body pour le padding lors du retrecissement*/
 body {
+
   margin: 0 auto 0 auto;
   max-width: 1500px;
   padding: 0 20px 0 20px;
+}
+section {
+  display: block;
+}
+
+h1 {
+  margin: 0;
 }
 
 ul {
@@ -30,6 +38,11 @@ a {
 .grey {
   color: #f2f2f2;
 }
+
+p {
+  margin: 0;
+}
+
 p .bold {
   font-weight: bold;
 }
@@ -69,7 +82,6 @@ nav {
 }
 
 nav .navbuttons {
-  /* INUTILE ? */
   display: flex;
   flex-wrap: wrap;
 }
@@ -130,7 +142,7 @@ nav .navbuttons {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  height: 35px;
+
 }
 
 .fakeswitch {
@@ -170,8 +182,9 @@ nav .navbuttons {
 /*accomodations*/
 #central {
   display: flex;
-  flex-wrap: wrap;
+/*   flex-wrap: wrap; */
   align-items: flex-start;
+  justify-items: center;
 }
 
 #accomodations {
@@ -187,16 +200,18 @@ nav .navbuttons {
 .resultcards {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .resultcard {
   display: flex;
   flex-direction: column;
+  flex-grow: 1;
+  flex-basis: 31%;
   background-color: white;
   padding: 5px;
-  margin-bottom: 30px;
-  width: 245px;
+  margin-bottom:30px;
+  max-width: 28%;
   border-radius: 25px;
   box-shadow: 0 0 7px #d1d1d1;
 }
@@ -216,27 +231,43 @@ nav .navbuttons {
 #popular {
   display: flex;
   flex-direction: column;
-  max-width: 420px;
+  max-width: 25%;
+  min-height: auto;
   background-color: #f2f2f2;
   border-radius: 15px;
   padding: 40px;
 }
 
+#popular header{
+  align-items: center;
+}
+
 .popularcards {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 .popularcard {
-  max-width: 345px;
-  max-height: 144px;
+  display: flex;
+  flex-direction: row;
+/*   max-width: 345px;
+  max-height: 144px; */
   border-radius: 25px;
   padding: 5px;
   background-color: white;
-  display: flex;
-  flex-direction: row;
+  height: 28%;
+  
 }
 
 .textpopcard {
-  display: flex;
+/*    display: flex;
   flex-direction: column;
-  width: 60%;
+  width: 60%;  */
+ margin-left: 20px;
+}
+
+.popularcard a {
+  display: flex;
+
 }
