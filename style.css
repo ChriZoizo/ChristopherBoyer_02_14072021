@@ -2,7 +2,7 @@
 
 /*ajouter un @media au body pour le padding lors du retrecissement*/
 body {
-
+  font-family: "Raleway", sans-serif;
   margin: 0 auto 0 auto;
   max-width: 1500px;
   padding: 0 20px 0 20px;
