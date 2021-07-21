@@ -232,48 +232,50 @@ nav .navbuttons {
 }
 /* popular */
 #popular {
-/*   display: flex;
+   display: flex;
   flex-direction: column;
   max-width: 25%;
   background-color: #f2f2f2;
   border-radius: 15px;
   padding: 40px;
-  height: 626px; */
+  height: 626px; 
 }
 
 #popular header {
-/*   align-items: center; */
+   align-items: center; 
 }
 
 .popularcards {
-/*   display: flex;
+   display: flex;
   flex-direction: column;
-  justify-content: space-around; */
+  justify-content: space-between; 
 }
 
 .popularcard {
-/*   display: flex;
-  flex-direction: row; */
+   display: flex;
+  flex-direction: row; 
 
   /*   max-width: 345px;
   max-height: 144px; */
 
-/*   border-radius: 25px;
+  border-radius: 25px;
   padding: 5px;
   background-color: white;
-  height: 28%; */
+  height: 144px; 
 }
 
 .textpopcard {
-  /*    display: flex;
+      display: flex;
+      justify-content: space-between
+      ;
   flex-direction: column;
-  width: 60%;  */
-/*   margin-left: 20px; */
+  width: 60%;  
+   margin-left: 20px; 
 }
 
 .popularcard a {
-/*   display: flex;
-} */
+   display: flex;
+} 
 
 /*--activity--*/
 
