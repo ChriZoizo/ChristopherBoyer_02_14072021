@@ -142,7 +142,6 @@ nav .navbuttons {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-
 }
 
 .fakeswitch {
@@ -180,47 +179,51 @@ nav .navbuttons {
 
 /*--central section--*/
 /*accomodations*/
-#central {
-  display: flex;
-/*   flex-wrap: wrap; */
-  align-items: flex-start;
-  justify-items: center;
+.central {
+ display: flex;
+  /*   flex-wrap: wrap; */
+/*   align-items: flex-start;
+  min-height: 33%; */
 }
 
 #accomodations {
-  max-width: 880px;
+   width: 61%;
   display: flex;
   flex-direction: column;
   background-color: #f2f2f2;
   border-radius: 15px;
   padding: 20px 40px 20px 40px;
   margin-right: 40px;
+  height: 626px;
+ 
 }
 
 .resultcards {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
+  height: 100%; 
 }
 
 .resultcard {
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
+   display: flex;
+  flex-direction: column; 
   flex-basis: 31%;
-  background-color: white;
-  padding: 5px;
-  margin-bottom:30px;
-  max-width: 28%;
+   background-color: white;
+  padding: 5px; 
+  height: 200px; 
+  /*   margin-bottom: 30px; */
   border-radius: 25px;
   box-shadow: 0 0 7px #d1d1d1;
+  box-sizing: border-box;
+
 }
 
 .resultcard a img {
   width: 100%;
   height: 114px;
   object-fit: cover;
-  border-radius: 20px 20px 0 0;
+  border-radius: 20px 20px 0 0; 
 }
 
 .textaccocard {
@@ -229,45 +232,59 @@ nav .navbuttons {
 }
 /* popular */
 #popular {
-  display: flex;
+/*   display: flex;
   flex-direction: column;
   max-width: 25%;
-  min-height: auto;
   background-color: #f2f2f2;
   border-radius: 15px;
   padding: 40px;
+  height: 626px; */
 }
 
-#popular header{
-  align-items: center;
+#popular header {
+/*   align-items: center; */
 }
 
 .popularcards {
-  display: flex;
+/*   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-around; */
 }
 
 .popularcard {
-  display: flex;
-  flex-direction: row;
-/*   max-width: 345px;
+/*   display: flex;
+  flex-direction: row; */
+
+  /*   max-width: 345px;
   max-height: 144px; */
-  border-radius: 25px;
+
+/*   border-radius: 25px;
   padding: 5px;
   background-color: white;
-  height: 28%;
-  
+  height: 28%; */
 }
 
 .textpopcard {
-/*    display: flex;
+  /*    display: flex;
   flex-direction: column;
   width: 60%;  */
- margin-left: 20px;
+/*   margin-left: 20px; */
 }
 
 .popularcard a {
-  display: flex;
+/*   display: flex;
+} */
 
+/*--activity--*/
+
+#activity {
+}
+
+.sharedcolumn {
+}
+
+.activitys {
+  display: flex;
+  /* justify-content: space-around; */
+  width: 100px;
 }

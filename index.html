@@ -6,7 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <link rel="stylesheet" href="style.css" />
   <script src="https://kit.fontawesome.com/25d75193a7.js" crossorigin="anonymous"></script>
-
+  <link
+  href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;600;800&display=swap"
+  rel="stylesheet"
+/>
   <title>Reservia - Accueil</title>
 </head>
 
@@ -18,7 +21,7 @@
     <nav>
       <div class="navbuttons">
         <a href="#accomodations" class="selected blue"> Hébergements </a>
-        <a href="#activity">Activités</a>
+        <a href="#activity"> Activités </a>
         <a href="#" class="blue"><strong>S'inscrire</strong></a>
       </div>
     </nav>
@@ -38,6 +41,7 @@
     </form>
 
     </br>
+    <!--VOIR CE QU4EST LA DIV TEST-->
 <div class="test">
     <div class="filters">
       <p><strong>Filtres</strong></p>
@@ -70,12 +74,14 @@
       <span>Plus de 500 logements sont disponible dans cette ville</span>
     </div>
   </section>
-
+                          <!--REFAIRE LES IMG EN BALISE FIGURE !!! -->
   <!-- Central section-->
   <!-- Accomodations section-->
-  <div id="central">
+  <div class="central">
     <section id="accomodations">
+      <header>
       <h2>Hébergement a Marseille</h2>
+    </header>
       <div class="resultcards">
 
         <div class="resultcard">
@@ -219,43 +225,50 @@
 
   <section id="activity">
     <h1>Activités a Marseille</h1>
+    <div class="activitycards">
+
     <a href="#">
-      <div class="largeactivitycard">
+      <div class="activitys cardlarge">
         <img src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux Port" />
         <p><span class="bold">Vieux Port</span></p>
       </div>
     </a>
+    <div class="sharedcolumn">
     <a href="#">
-      <div class="activitycard">
+      <div class="activitys carda">
         <img src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de Pomègues" />
         <p><span class="bold">Fort de Pomègues</span></p>
       </div>
     </a>
     <a href="#">
-      <div class="activitycard">
+      <div class="activitys cardb">
         <img src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Îles du Frioul" />
         <p><span class="bold">Îles du Frioul</span></p>
       </div>
     </a>
+  </div>
     <a href="#">
-      <div class="largeactivitycard">
+      <div class="activitys cardlarge">
         <img src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
           alt="Parc National des Calanques" />
         <p><span class="bold">Parc National des Calanques</span></p>
       </div>
     </a>
+    <div class="sharedcolumn">
     <a href="#">
-      <div class="activitycard">
+      <div class="activitys cardc">
         <img src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-de-la-Garde" />
         <p><span class="bold">Notre-Dame-de-la-Garde</span></p>
       </div>
     </a>
     <a href="#">
-      <div class="activitycard">
+      <div class="activitys cardd">
         <img src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Parc Longchamp" />
         <p><span class="bold">Parc Longchamp</span></p>
       </div>
     </a>
+  </div>
+  </div>
   </section>
 
 
