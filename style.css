@@ -280,14 +280,20 @@ nav .navbuttons {
 
 /*--activity--*/
 .activitys a img {
-  object-fit: contain;
+  object-fit: cover;
   width: 90%;
   max-height: 100%;
 }
 .sharedcolumn .activitys a img {
-  object-fit: contain;
+  object-fit: cover;
   width: 90%;
   max-height: 100%;
+}
+
+.sharedcolumn {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 #activity {
@@ -297,6 +303,7 @@ nav .navbuttons {
 .activitycards {
   display: flex;
   justify-content: space-between;
+  
   max-height: 50%;
 }
 
@@ -308,9 +315,31 @@ nav .navbuttons {
 }
 
 .carda{
-  height: 50%;
+  height: 45%;
 }
 .cardb {
-  height: 50%;
+  height: 45%;
 }
 
+.cardlarge {
+  height: 100%
+}
+
+/*--Footer--*/
+
+  
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f2f2f2;
+
+}
+
+footer div ul li:first-child{
+margin-bottom: 1.2rem;
+}
+
+footer div ul li {
+margin-top: 0.5rem;
+}
