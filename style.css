@@ -207,7 +207,6 @@ nav .navbuttons {
   flex-wrap: wrap;
   justify-content: space-between;
   height: 30.3rem; 
-  margin-bottom: 1rem;
 }
 
 .resultcard {
@@ -241,7 +240,7 @@ nav .navbuttons {
 }
 
 #accomodations p {
-  font-size: 1.2rem;
+
 }
 /* popular */
 #popular {
