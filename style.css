@@ -231,7 +231,7 @@ nav .navbuttons {
 }
 
 .textaccocard {
-  margin-left: 1rem;
+  margin-left: 0.6rem;
   margin-bottom: 0.33rem;
 }
 
@@ -278,10 +278,10 @@ nav .navbuttons {
   height: 144px; 
 }
 
-.textpopcard {
+.popcardcontain {
       display: flex;
- /*      justify-content: space-between
-      ; */
+      justify-content: space-around
+      ; 
   flex-direction: column;
   width: 60%;  
    margin-left: 20px; 
@@ -290,6 +290,10 @@ nav .navbuttons {
 .popularcard a {
    display: flex;
 } 
+
+.popularrate {
+  margin-left: 0.35rem;
+}
 
 /*--activity--*/
 /* 
@@ -307,8 +311,7 @@ nav .navbuttons {
 .activitycards {
    display: flex;
   justify-content: space-between;
-  
-  max-height: 50%;
+
 }
 
 
