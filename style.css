@@ -3,21 +3,27 @@
 /*ajouter un @media au body pour le padding lors du retrecissement*/
 body {
   font-family: "Raleway", sans-serif;
-  margin: 0 auto 0 auto;
-  max-width: 1500px;
-  padding: 0 20px 0 20px;
+  margin: 0;
 }
+
+.bodycontain {
+  max-width: 1500px;
+  margin: 0px auto;
+}
+
 section {
   display: block;
+  margin: 0 50px;
 }
 
 h1 {
-margin: 0;
-font-size: 1.5rem;
+  margin: 1rem 0 0.5rem 0;
+  font-size: 1.5rem;
 }
 
 h2 {
-
+  font-size: 1.5rem;
+  margin: 1rem 0 0.5rem 0;
 }
 
 ul {
@@ -45,6 +51,7 @@ a {
 }
 
 p {
+  font-size: 0.9rem;
   margin: 0.5rem;
 }
 
@@ -56,12 +63,10 @@ p .bold {
   box-sizing: border-box;
 }
 
-/* --popular style-- */
+a:hover {
+  opacity: 50%;
+  transition: 0.4s;
 
-.popularcard a img {
-  width: 37%;
-  object-fit: cover;
-  border-radius: 20px 0 0 20px;
 }
 
 /* -----Structure----- */
@@ -74,11 +79,12 @@ p .bold {
   padding-top: 35px; /* PROBLEME !!  remet une marge au body*/
 }
 
-header {
+.mainheader {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
+  margin: 0 50px;
 }
 
 nav {
@@ -104,10 +110,6 @@ nav .navbuttons {
 
 /*Search*/
 .searchform {
-  /*   display: flex;
-  align-items: flex-start; */
-  /*   border-radius: 11px;
-  border: 1px solid #dfe1e5; */
   width: 420px;
   height: auto;
   font-size: 0;
@@ -155,7 +157,7 @@ nav .navbuttons {
   border: 2px solid #f2f2f2;
   height: 35px;
   border-radius: 30px;
-  margin-left: 5%;
+  margin-left: 15px;
 }
 
 .fakeswitch:hover {
@@ -182,52 +184,53 @@ nav .navbuttons {
   border-radius: 100px;
 }
 
+
 /*--central section--*/
 /*accomodations*/
 .central {
- display: flex;
- height: 100%;
-
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  margin: 0 50px 40px 50px;
 }
 
 #accomodations {
-   width: 61%;
+  width: 61%;
   display: flex;
   flex-direction: column;
   background-color: #f2f2f2;
   border-radius: 15px;
   padding: 20px 40px 20px 40px;
-  margin-right: 40px;
+
+  margin-right: 20px;
   height: 626px;
- 
 }
 
 .resultcards {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  height: 30.3rem; 
+  height: 30.3rem;
 }
 
 .resultcard {
-   display: flex;
-  flex-direction: column; 
+  display: flex;
+  flex-direction: column;
   flex-basis: 30.5%;
-   background-color: white;
-  padding: 5px; 
-  height: 13.3rem; 
-  /*   margin-bottom: 30px; */
+  background-color: white;
+  padding: 5px;
+  height: 13.3rem;
+
   border-radius: 25px;
   box-shadow: 0 0 7px #bdbdbd;
   box-sizing: border-box;
-
 }
 
 .resultcard a img {
   width: 100%;
   height: 114px;
   object-fit: cover;
-  border-radius: 20px 20px 0 0; 
+  border-radius: 20px 20px 0 0;
 }
 
 .textaccocard {
@@ -239,57 +242,60 @@ nav .navbuttons {
   margin-left: 0.33rem;
 }
 
-#accomodations p {
 
-}
 /* popular */
 #popular {
-   display: flex;
+  display: flex;
   flex-direction: column;
-  max-width: 25%;
+  max-width: 30%;
   background-color: #f2f2f2;
   border-radius: 15px;
   padding: 20px 40px 20px 40px;
-  height: 626px; 
+  height: 626px;
+  margin-left: 20px;
+
 }
 
 #popular header {
-   align-items: center; 
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.popularcard a img {
+  width: 37%;
+  object-fit: cover;
+  border-radius: 20px 0 0 20px;
 }
 
 .popularcards {
-   display: flex;
+  display: flex;
   flex-direction: column;
-  justify-content: space-around; 
+  justify-content: space-around;
   height: 100%;
 }
 
 .popularcard {
-   display: flex;
-  flex-direction: row; 
-
-  /*   max-width: 345px;
-  max-height: 144px; */
+  display: flex;
+  flex-direction: row;
 
   border-radius: 25px;
   padding: 5px;
-/*   margin-bottom: 35px; */
   background-color: white;
-  height: 144px; 
+  height: 144px;
 }
 
 .popcardcontain {
-      display: flex;
-      justify-content: space-around
-      ; 
+  display: flex;
+  justify-content: space-around;
   flex-direction: column;
-  width: 60%;  
-   margin-left: 20px; 
+  width: 60%;
+  margin-left: 20px;
 }
 
 .popularcard a {
-   display: flex;
-} 
+  display: flex;
+}
 
 .popularrate {
   margin-left: 0.35rem;
@@ -303,33 +309,61 @@ nav .navbuttons {
   height: 100%;
 } */
 
-
 #activity {
   height: 550px;
+  margin-bottom: 40px;
 }
 
 .activitycards {
-   display: flex;
+  display: flex;
   justify-content: space-between;
-
 }
 
-
-.cardlarge, .carda, .cardb, .cardc, .cardd {
-   display: flex;
-  flex-direction: column; 
-
-
-
+.cardlarge,
+.carda,
+.cardb,
+.cardc,
+.cardd {
+  display: flex;
+  flex-direction: column;
 }
-.cardlarge p, .carda p, .cardb p, .cardc p, .cardd p {
-
+.cardlarge p,
+.carda p,
+.cardb p,
+.cardc p,
+.cardd p {
   line-height: 3.7rem;
-margin-left: 1rem;
-
+  margin-left: 1rem;
 }
 
+.cardlarge {
+  height: 30rem;
+  width: 23%;
+  box-shadow: 0 0 7px #bdbdbd;
+  border-radius: 15px;
+  overflow: hidden;
+}
 
+.imglarge {
+  object-fit: cover;
+  height: 26.3rem;
+}
+
+.sharedcolumn {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 23%;
+  height: 30rem;
+}
+.cardlarge p,
+.carda p,
+.cardb p,
+.cardc p,
+.cardd p {
+  line-height: 3.7rem;
+  margin-left: 1rem;
+}
 
 .cardlarge {
   height: 30rem;
@@ -339,8 +373,7 @@ margin-left: 1rem;
   overflow: hidden;
 }
 
-
-.imglarge{
+.imglarge {
   object-fit: cover;
   height: 26.3rem;
 }
@@ -352,39 +385,8 @@ margin-left: 1rem;
   width: 21%;
   height: 30rem;
 }
-.cardlarge p, .carda p, .cardb p, .cardc p, .cardd p {
 
-  line-height: 3.7rem;
-margin-left: 1rem;
-
-}
-
-
-
-.cardlarge {
-  height: 30rem;
-  width: 21%;
-  box-shadow: 0 0 7px #bdbdbd;
-  border-radius: 15px;
-  overflow: hidden;
-}
-
-
-.imglarge{
-  object-fit: cover;
-  height: 26.3rem;
-}
-
-.sharedcolumn {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 21%;
-  height: 30rem;
-}
-
-.carda{
-
+.carda {
   height: 15.8rem;
   max-height: 100%;
   box-shadow: 0 0 7px #bdbdbd;
@@ -393,14 +395,12 @@ margin-left: 1rem;
 }
 
 .cardb {
-
   height: 11rem;
   box-shadow: 0 0 7px #bdbdbd;
   border-radius: 15px;
   overflow: hidden;
 }
-.cardc{
-
+.cardc {
   height: 13rem;
   max-height: 100%;
   box-shadow: 0 0 7px #bdbdbd;
@@ -409,13 +409,11 @@ margin-left: 1rem;
 }
 
 .cardd {
-
   height: 13.9rem;
   box-shadow: 0 0 7px #bdbdbd;
   border-radius: 15px;
   overflow: hidden;
 }
-
 
 .imgsmla {
   object-fit: cover;
@@ -440,19 +438,26 @@ margin-left: 1rem;
 
 /*--Footer--*/
 
-  
-
 footer {
-  display: flex;
-  justify-content: space-between;
   background-color: #f2f2f2;
-
 }
 
-footer div ul li:first-child{
-margin-bottom: 1.2rem;
+.globalfooter {
+  display: flex;
+  justify-content: space-around;
+  width: 1440px;
+  margin: 0 auto;
+}
+
+footer div ul li:first-child {
+  margin-bottom: 1.2rem;
+  font-weight: bold;
+}
+
+footer div {
+  width: 1440px;
 }
 
 footer div ul li {
-margin-top: 0.5rem;
+  margin-top: 0.5rem;
 }
