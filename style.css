@@ -12,7 +12,12 @@ section {
 }
 
 h1 {
-  margin: 0;
+margin: 0;
+font-size: 1.5rem;
+}
+
+h2 {
+
 }
 
 ul {
@@ -40,7 +45,7 @@ a {
 }
 
 p {
-  margin: 0;
+  margin: 0.5rem;
 }
 
 p .bold {
@@ -181,9 +186,8 @@ nav .navbuttons {
 /*accomodations*/
 .central {
  display: flex;
-  /*   flex-wrap: wrap; */
-/*   align-items: flex-start;
-  min-height: 33%; */
+ height: 100%;
+
 }
 
 #accomodations {
@@ -202,16 +206,17 @@ nav .navbuttons {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  height: 100%; 
+  height: 30.3rem; 
+  margin-bottom: 1rem;
 }
 
 .resultcard {
    display: flex;
   flex-direction: column; 
-  flex-basis: 31%;
+  flex-basis: 30.5%;
    background-color: white;
   padding: 5px; 
-  height: 200px; 
+  height: 13.3rem; 
   /*   margin-bottom: 30px; */
   border-radius: 25px;
   box-shadow: 0 0 7px #bdbdbd;
@@ -227,8 +232,16 @@ nav .navbuttons {
 }
 
 .textaccocard {
-  margin-left: 15px;
-  margin-bottom: 5px;
+  margin-left: 1rem;
+  margin-bottom: 0.33rem;
+}
+
+.rated {
+  margin-left: 0.33rem;
+}
+
+#accomodations p {
+  font-size: 1.2rem;
 }
 /* popular */
 #popular {
@@ -237,7 +250,7 @@ nav .navbuttons {
   max-width: 25%;
   background-color: #f2f2f2;
   border-radius: 15px;
-  padding: 40px;
+  padding: 20px 40px 20px 40px;
   height: 626px; 
 }
 
@@ -248,7 +261,8 @@ nav .navbuttons {
 .popularcards {
    display: flex;
   flex-direction: column;
-  justify-content: space-between; 
+  justify-content: space-around; 
+  height: 100%;
 }
 
 .popularcard {
@@ -260,15 +274,15 @@ nav .navbuttons {
 
   border-radius: 25px;
   padding: 5px;
-  margin-bottom: 35px;
+/*   margin-bottom: 35px; */
   background-color: white;
   height: 144px; 
 }
 
 .textpopcard {
       display: flex;
-      justify-content: space-between
-      ;
+ /*      justify-content: space-between
+      ; */
   flex-direction: column;
   width: 60%;  
    margin-left: 20px; 
