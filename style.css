@@ -1,6 +1,4 @@
-/*PENSER A REUNIR tout les display:flex dans un seul appel*/
 
-/*ajouter un @media au body pour le padding lors du retrecissement*/
 body {
   font-family: "Raleway", sans-serif;
   margin: 0;
@@ -52,7 +50,7 @@ a {
 
 p {
   font-size: 0.9rem;
-  margin: 0.5rem;
+  margin: 0.5rem 0;
 }
 
 p .bold {
@@ -110,8 +108,9 @@ nav .navbuttons {
 
 /*Search*/
 .searchform {
-  width: 420px;
+  max-width: 420px;
   height: auto;
+  margin-top: 20px;
   font-size: 0;
 }
 
@@ -133,6 +132,10 @@ nav .navbuttons {
   border: 1px solid #f2f2f2;
 }
 
+form p {
+  font-size: 0;
+}
+
 .formbutton {
   width: 24%;
   border: 0 none;
@@ -144,6 +147,10 @@ nav .navbuttons {
 }
 
 /*Filters*/
+.filtersection {
+  display: flex;
+  justify-content: space-between;
+}
 
 .filters {
   display: flex;
@@ -157,7 +164,7 @@ nav .navbuttons {
   border: 2px solid #f2f2f2;
   height: 35px;
   border-radius: 30px;
-  margin-left: 15px;
+  margin: 10px 15px;
 }
 
 .fakeswitch:hover {
