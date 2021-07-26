@@ -14,6 +14,14 @@
   }
 } */
 
+
+/* Big probleme with responsiv !!!!!! look up ! */
+
+/* Populard card pictures don't have the same size!!! */
+
+
+
+
 body {
   font-family: "Raleway", sans-serif;
   margin: 0;
@@ -301,7 +309,7 @@ form p {
   border-radius: 25px;
   padding: 5px;
   background-color: white;
-  height: 144px;
+  height: 9rem;
 }
 
 .popcardcontain {
@@ -413,8 +421,48 @@ align-content: space-around;
   margin: 15px 0
 }
 
-.resultcard a img {
 
+
+#activity {
+  height: auto;
+}
+
+.activitycards {
+  flex-direction: column;
+  display:none
+}
+
+.cardlarge, .carda, .cradb, .cardc, .cardd {
+  height: 13.3rem;
+  width: 100%;
+display: none;
+}
+
+/* body {
+  display: none;
+}
+ */
+.sharedcolumn {
+  height: auto;
+}
+
+.imglarge {
+  height: 10rem;
+}
+} 
+
+@media screen and (max-width: 720px){
+
+  #activity {
+    height: auto;
+  }
+  
+}
+
+@media screen and (min-width: 899px){
+  
+.cardlarge {
+  width: 21%
 }
 
 }
@@ -444,36 +492,10 @@ align-content: space-around;
 .cardd {
   display: flex;
   flex-direction: column;
-}
-.cardlarge p,
-.carda p,
-.cardb p,
-.cardc p,
-.cardd p {
-  line-height: 3.7rem;
-  margin-left: 1rem;
-}
-
-.cardlarge {
-  height: 30rem;
-  width: 23%;
   box-shadow: 0 0 7px #bdbdbd;
   border-radius: 15px;
   overflow: hidden;
 }
-
-.imglarge {
-  object-fit: cover;
-  height: 26.3rem;
-}
-
-.sharedcolumn {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 23%;
-  height: 30rem;
-}
 .cardlarge p,
 .carda p,
 .cardb p,
@@ -485,7 +507,7 @@ align-content: space-around;
 
 .cardlarge {
   height: 30rem;
-  width: 21%;
+/*   width: 21%; */
   box-shadow: 0 0 7px #bdbdbd;
   border-radius: 15px;
   overflow: hidden;
@@ -507,30 +529,22 @@ align-content: space-around;
 .carda {
   height: 15.8rem;
   max-height: 100%;
-  box-shadow: 0 0 7px #bdbdbd;
-  border-radius: 15px;
-  overflow: hidden;
+
 }
 
 .cardb {
   height: 11rem;
-  box-shadow: 0 0 7px #bdbdbd;
-  border-radius: 15px;
-  overflow: hidden;
+
 }
 .cardc {
   height: 13rem;
   max-height: 100%;
-  box-shadow: 0 0 7px #bdbdbd;
-  border-radius: 15px;
-  overflow: hidden;
+
 }
 
 .cardd {
   height: 13.9rem;
-  box-shadow: 0 0 7px #bdbdbd;
-  border-radius: 15px;
-  overflow: hidden;
+
 }
 
 .imgsmla {
