@@ -14,18 +14,13 @@
   }
 } */
 
-
 /* Big probleme with responsiv !!!!!! look up ! */
 
 /* Populard card pictures don't have the same size!!! */
 
-
-
-
 body {
   font-family: "Raleway", sans-serif;
   margin: 0;
-
 }
 
 .bodycontain {
@@ -340,14 +335,12 @@ form p {
     width: auto;
     height: auto;
     margin: 15px 0;
-
   }
 
-.resultcards {
-justify-content: space-around;
-align-content: space-around;
-}
-
+  .resultcards {
+    justify-content: space-around;
+    align-content: space-around;
+  }
 
   #popular {
     order: -1;
@@ -365,28 +358,25 @@ align-content: space-around;
     width: 30%;
   }
 
-.globalfooter {
-  width: auto;
-}
+  .globalfooter {
+    width: auto;
+  }
 
-  footer div{
+  footer div {
     width: auto;
   }
 }
 
-
 @media screen and (max-width: 1020px) {
- 
-  .central{
+  .central {
     width: 100%;
     margin-left: 0;
-    margin-right: 0
+    margin-right: 0;
   }
 
- #accomodations {
-   background-color: white;
- }
-
+  #accomodations {
+    background-color: white;
+  }
 }
 
 @media screen and (max-width: 900px) {
@@ -398,9 +388,9 @@ align-content: space-around;
     padding-left: 0;
     margin-right: 0;
   }
-  
+
   .mainheader {
-    margin:0
+    margin: 0;
   }
 
   nav {
@@ -409,20 +399,20 @@ align-content: space-around;
   }
 
   .logo {
-/*     position: sticky;
+    /*     position: sticky;
     top: 0;
     left: 0; */
     margin-left: 5%;
   }
 
   nav .navbuttons {
-flex-wrap:nowrap;
-width: 100%;
+    flex-wrap: nowrap;
+    width: 100%;
   }
-  
+
   .navbuttons a:last-child {
     position: absolute;
-    top:20px;
+    top: 20px;
     right: 0px;
   }
 
@@ -431,92 +421,109 @@ width: 100%;
     margin: 0;
     border-bottom: 4px solid #0065fc;
   }
-  
+
   .navbuttons a:nth-child(2) {
     width: 50%;
     margin: 0;
     border-bottom: 4px solid #f2f2f2;
   }
 
-
-  
   section {
-    margin: 0 20px
+    margin: 0 20px;
   }
-  
+
   #popular {
     height: 40rem;
     padding: 20px 15px 20px 15px;
   }
-  
+
   .popularcards {
-   flex-direction: column;
-   justify-content: space-around;
+    flex-direction: column;
+    justify-content: space-around;
   }
 
   .popularcard {
     width: auto;
   }
 
- #accomodations {
-  padding: 20px 15px 20px 15px;
- }
+  #accomodations {
+    padding: 20px 15px 20px 15px;
+  }
 
-.resultcards {
-  flex-direction: column;
-  flex-wrap: wrap;
-  height: auto;
-}
+  .resultcards {
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: auto;
+  }
 
-.resultcard {
-  width: 100%;
-  margin: 15px 0
-}
+  .resultcard {
+    width: 100%;
+    margin: 15px 0;
+  }
+
+  .imglarge {
+    width: 100%;
+    max-height: 114px;
+    object-fit: cover;
+  }
+  .carda {
+    width: 100%;
+    max-height: 114px;
+    object-fit: cover;
+  }
 
 
-
-#activity {
-  height: auto;
-}
-
-.activitycards {
-  flex-direction: column;
-  display:none
-}
-
-.cardlarge, .carda, .cradb, .cardc, .cardd {
-  height: 13.3rem;
-  width: 100%;
-display: none;
-}
-
-/* body {
-  display: none;
-}
- */
-.sharedcolumn {
-  height: auto;
-}
-
-.imglarge {
-  height: 10rem;
-}
-} 
-
-@media screen and (max-width: 720px){
 
   #activity {
     height: auto;
   }
-  
-}
 
-@media screen and (min-width: 899px){
-  
-  .cardlarge {
-    width: 23%
+  .activitycards {
+    flex-direction: column;
+    row-gap: 40px;
+    display: none;
   }
 
+  .cardlarge,
+  .carda,
+  .cradb,
+  .cardc,
+  .cardd {
+    max-height: 160px;
+    /*   width: 100%;
+display: none; */
+  }
+
+  .cardlarge p,
+  .carda p,
+  .cardb p,
+  .cardc p,
+  .cardd p {
+    line-height: unset;
+    margin-left: 1rem;
+  }
+  
+  .sharedcolumn {
+    row-gap: 40px;
+  }
+
+
+}
+
+@media screen and (max-width: 720px) {
+  #activity {
+    height: auto;
+  }
+
+.globalfooter {
+  flex-wrap: wrap;
+}
+}
+
+@media screen and (min-width: 901px) {
+  .cardlarge {
+    width: 23%;
+  }
 }
 
 /*--activity--*/
@@ -560,10 +567,6 @@ display: none;
 
 .cardlarge {
   height: 30rem;
-/*   width: 21%; */
-  box-shadow: 0 0 7px #bdbdbd;
-  border-radius: 15px;
-  overflow: hidden;
 }
 
 .imglarge {
@@ -576,28 +579,22 @@ display: none;
   flex-direction: column;
   justify-content: space-between;
   width: 21%;
-  height: 30rem;
+  height: auto;
 }
 
 .carda {
   height: 15.8rem;
-  max-height: 100%;
-
 }
 
 .cardb {
   height: 11rem;
-
 }
 .cardc {
   height: 13rem;
-  max-height: 100%;
-
 }
 
 .cardd {
   height: 13.9rem;
-
 }
 
 .imgsmla {
@@ -624,6 +621,8 @@ display: none;
 /*--Footer--*/
 
 footer {
+  position: relative;
+  bottom: 0;
   background-color: #f2f2f2;
 }
 
