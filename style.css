@@ -16,7 +16,7 @@ section {
 }
 
 h1 {
-  margin: 1rem 0 0.5rem 0;
+  margin: 2rem 0 0.5rem 0;
   font-size: 1.5rem;
 }
 
@@ -267,7 +267,7 @@ section i{
 #popular {
   display: flex;
   flex-direction: column;
-  max-width: 30%;
+  max-width: 27%;
   background-color: #f2f2f2;
   border-radius: 15px;
   padding: 20px 40px 20px 40px;
@@ -362,7 +362,7 @@ section i{
   }
 }
 
-@media screen and (max-width: 1020px) {
+@media screen and (max-width: 1040px) {
   .central {
     width: 100%;
     margin-left: 0;
@@ -372,6 +372,15 @@ section i{
   #accomodations {
     background-color: white;
   }
+
+  .cardc p {
+    margin-top: 0.5rem !important;
+  }
+
+  .actextlrg {
+    margin-top: 0.5rem !important;
+  }
+
 }
 
 @media screen and (max-width: 900px) {
@@ -429,7 +438,7 @@ section i{
 
   #popular {
     height: 40rem;
-    padding: 20px 15px 20px 15px;
+    padding: 20px 20px 20px 20px;
   }
 
   .popularcards {
@@ -442,7 +451,7 @@ section i{
   }
 
   #accomodations {
-    padding: 20px 15px 20px 15px;
+    padding: 20px 20px 20px 20px;
   }
 
   .resultcards {
@@ -551,9 +560,9 @@ display: none; */
 }
 
 @media screen and (min-width: 901px) {
-/*   .cardlarge {
+  .cardlarge {
     width: 23%;
-  } */
+  }
 }
 
 /*--activity--*/
@@ -595,8 +604,8 @@ display: none; */
 .cardb p,
 .cardc p,
 .cardd p {
-  line-height: 2rem;
   margin-left: 1rem;
+  margin-top: 1rem;
 }
 
 .cardlarge {
