@@ -218,6 +218,7 @@ section i{
   width: 61%;
   display: flex;
   flex-direction: column;
+  row-gap: 20px;
   background-color: #f2f2f2;
   border-radius: 15px;
   padding: 20px 40px 20px 40px;
@@ -522,7 +523,7 @@ display: none; */
   }
 
   .search-field {
-    width: unset !important
+    width: unset !important;
   }
 
   .formbutton {
@@ -550,9 +551,9 @@ display: none; */
 }
 
 @media screen and (min-width: 901px) {
-  .cardlarge {
+/*   .cardlarge {
     width: 23%;
-  }
+  } */
 }
 
 /*--activity--*/
