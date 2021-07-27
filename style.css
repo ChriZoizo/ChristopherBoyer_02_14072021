@@ -460,27 +460,29 @@ section i{
     margin: 15px 0;
   }
 
-  .imglarge {
-    width: 100%;
-    max-height: 114px;
-    object-fit: cover;
-  }
+/* 
   .carda {
     width: 100%;
     max-height: 114px;
     object-fit: cover;
-  }
+  } */
 
 
 
   #activity {
-    height: auto;
+    height: auto !important
   }
 
   .activitycards {
     flex-direction: column;
     row-gap: 40px;
     display: none;
+  }
+
+  .imglarge {
+    width: 100%;
+    max-height: 114px;
+    object-fit: cover;
   }
 
   .cardlarge,
@@ -501,9 +503,14 @@ display: none; */
     line-height: unset;
     margin-left: 1rem;
   }
+
+  .imgsmla, .imgsmlb, .imgsmlc, .imgsmld {
+    height: 114px !important;
+  }
   
   .sharedcolumn {
     row-gap: 40px;
+    min-width: 100%;
   }
 
 
