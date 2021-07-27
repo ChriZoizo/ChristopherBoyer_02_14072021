@@ -147,14 +147,9 @@ form p {
   color: white;
   font-weight: bold;
 }
+
 .searchbutton {
-  width: 24%;
-  border: 0 none;
-  background-color: #0065fc;
-  height: 38px;
-  border-radius: 0 11px 11px 0;
-  color: white;
-  font-weight: bold;
+  display: none;
 }
 
 section i{
@@ -517,6 +512,34 @@ display: none; */
 }
 
 @media screen and (max-width: 720px) {
+
+  .gpslogo {
+    width: 40px !important;
+  }
+
+  .searchform{
+    max-width: 100% !important;
+  }
+
+  .search-field {
+    width: unset !important
+  }
+
+  .formbutton {
+    display: none;
+  }
+
+  .searchbutton {
+    width: 40px;
+    border: 0 none;
+    background-color: #0065fc;
+    height: 38px;
+    border-radius: 0 11px 11px 0;
+    color: white;
+    font-weight: bold;
+    display: unset;
+  }
+
   #activity {
     height: auto;
   }
