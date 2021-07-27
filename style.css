@@ -147,6 +147,19 @@ form p {
   color: white;
   font-weight: bold;
 }
+.searchbutton {
+  width: 24%;
+  border: 0 none;
+  background-color: #0065fc;
+  height: 38px;
+  border-radius: 0 11px 11px 0;
+  color: white;
+  font-weight: bold;
+}
+
+section i{
+  display: none
+}
 
 
 
