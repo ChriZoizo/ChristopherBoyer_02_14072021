@@ -67,6 +67,7 @@ a:hover {
   transition: 0.4s;
 }
 
+
 /* -----Structure----- */
 
 /*--Header--*/
@@ -132,6 +133,7 @@ nav .navbuttons {
   outline: none;
   font-weight: bold;
   border: 1px solid #f2f2f2;
+  font-family: "Raleway", sans-serif;
 }
 
 form p {
@@ -146,6 +148,7 @@ form p {
   border-radius: 0 11px 11px 0;
   color: white;
   font-weight: bold;
+  font-family: "Raleway", sans-serif;
 }
 
 .searchbutton {
@@ -342,6 +345,7 @@ section i{
     max-width: 100%;
     height: auto;
     margin: 15px 0;
+    border-radius: 0;
   }
 
   .popularcards {
@@ -450,6 +454,10 @@ section i{
     width: auto;
   }
 
+  .popularcard a img {
+    width: 15em
+  }
+
   #accomodations {
     padding: 20px 20px 20px 20px;
   }
@@ -464,6 +472,7 @@ section i{
     width: 100%;
     margin: 15px 0;
   }
+
 
 /* 
   .carda {
@@ -548,6 +557,10 @@ display: none; */
     color: white;
     font-weight: bold;
     display: unset;
+  }
+
+  .popularcard a img {
+    width: 37%
   }
 
   #activity {
