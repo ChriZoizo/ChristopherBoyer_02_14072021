@@ -1,4 +1,4 @@
-/* Populard card pictures don't have the same size!!! */
+
 
 body {
   font-family: "Raleway", sans-serif;
@@ -120,7 +120,7 @@ nav .navbuttons {
 .gpslogo {
   height: 40px;
   font-size: 16px;
-  padding: 9px 4% 11px 4%;
+  padding: 14px 4% 15px 4%;
   border-top-left-radius: 11px;
   border-bottom-left-radius: 11px;
   background-color: #f2f2f2;
@@ -129,6 +129,7 @@ nav .navbuttons {
 
 .search-field {
   padding: 10px;
+  height: 48px;
   width: 56%;
   outline: none;
   font-weight: bold;
@@ -144,7 +145,7 @@ form p {
   width: 24%;
   border: 0 none;
   background-color: #0065fc;
-  height: 38px;
+  height: 48px;
   border-radius: 0 11px 11px 0;
   color: white;
   font-weight: bold;
@@ -284,6 +285,10 @@ section i{
   justify-content: space-between;
 }
 
+.fa-chart-line {
+font-size: 1.4rem;
+}
+
 .popularcard a img {
   width: 37%;
   object-fit: cover;
@@ -300,7 +305,7 @@ section i{
 .popularcard {
   display: flex;
   flex-direction: row;
-
+  box-shadow: 0 0 12px #bdbdbd;
   border-radius: 25px;
   padding: 5px;
   background-color: white;
@@ -407,9 +412,7 @@ section i{
   }
 
   .logo {
-    /*     position: sticky;
-    top: 0;
-    left: 0; */
+
     margin-left: 5%;
   }
 
@@ -474,15 +477,6 @@ section i{
   }
 
 
-/* 
-  .carda {
-    width: 100%;
-    max-height: 114px;
-    object-fit: cover;
-  } */
-
-
-
   #activity {
     height: auto !important
   }
@@ -505,8 +499,10 @@ section i{
   .cardc,
   .cardd {
     max-height: 160px;
-    /*   width: 100%;
-display: none; */
+  }
+
+  .cardb {
+    height: 160px !important;
   }
 
   .cardlarge p,
@@ -515,8 +511,13 @@ display: none; */
   .cardc p,
   .cardd p {
     line-height: unset;
-    margin-left: 1rem;
+    margin: 0.6rem 0 0 1rem !important;
+
+
+
   }
+
+
 
   .imgsmla, .imgsmlb, .imgsmlc, .imgsmld {
     height: 114px !important;
@@ -533,7 +534,7 @@ display: none; */
 @media screen and (max-width: 720px) {
 
   .gpslogo {
-    width: 40px !important;
+    padding: 14px 14px 15px 14px;
   }
 
   .searchform{
@@ -552,7 +553,7 @@ display: none; */
     width: 40px;
     border: 0 none;
     background-color: #0065fc;
-    height: 38px;
+    height: 48px;
     border-radius: 0 11px 11px 0;
     color: white;
     font-weight: bold;
@@ -579,12 +580,7 @@ display: none; */
 }
 
 /*--activity--*/
-/* 
-.sharedcolumn .activitys a img {
-  object-fit: cover;
-  width: 90%;
-  height: 100%;
-} */
+
 
 #activity {
   height: 550px;
@@ -607,7 +603,7 @@ display: none; */
 .cardd {
   display: flex;
   flex-direction: column;
-  box-shadow: 0 0 7px #bdbdbd;
+  box-shadow: 0 0 12px #bdbdbd;
   border-radius: 15px;
   overflow: hidden;
 }
