@@ -566,6 +566,7 @@ section i {
   .globalfooter {
     flex-wrap: wrap;
   }
+
 }
 
 @media screen and (min-width: 901px) {
@@ -689,4 +690,8 @@ footer div {
 
 footer div ul li {
   margin-top: 0.5rem;
+}
+
+footer div ul {
+  padding-left: 20px;
 }
