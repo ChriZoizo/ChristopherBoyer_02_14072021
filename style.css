@@ -551,6 +551,10 @@ section i {
     display: unset;
   }
 
+  .filters> p {
+    width:100%
+   }
+
   .popularcard a img {
     width: 37%;
   }
