@@ -13,6 +13,10 @@ section {
   margin: 0 50px;
 }
 
+ul li {
+  font-size: 0.9rem
+}
+
 h1 {
   margin: 2rem 0 0.5rem 0;
   font-size: 1.5rem;
@@ -281,7 +285,7 @@ section i {
 }
 
 .fa-chart-line {
-font-size: 1.4rem;
+  font-size: 1.4rem;
 }
 
 .popularcard a img {
@@ -504,9 +508,6 @@ font-size: 1.4rem;
   .cardd p {
     line-height: unset;
     margin: 0.6rem 0 0 1rem !important;
-
-
-
   }
 
   .imgsmla,
