@@ -4,7 +4,7 @@ body {
 }
 
 .bodycontain {
-  max-width: 1500px;
+  max-width: 1440px;
   margin: 0px auto;
 }
 
@@ -545,7 +545,7 @@ section i {
     border: 0 none;
     background-color: #0065fc;
     height: 48px;
-    border-radius: 0 11px 11px 0;
+    border-radius: 11 11px 11px 11px;
     color: white;
     font-weight: bold;
     display: unset;
