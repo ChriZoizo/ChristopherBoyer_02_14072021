@@ -545,10 +545,12 @@ section i {
     border: 0 none;
     background-color: #0065fc;
     height: 48px;
-    border-radius: 11 11px 11px 11px;
+    border-radius: 11px 11px 11px 11px;
     color: white;
     font-weight: bold;
     display: unset;
+    position: relative;
+    right: 15px
   }
 
   .filters> p {
@@ -693,5 +695,5 @@ footer div ul li {
 }
 
 footer div ul {
-  padding-left: 20px;
+  padding-left: 50px;
 }
