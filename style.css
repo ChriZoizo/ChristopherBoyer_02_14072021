@@ -525,23 +525,21 @@ section i {
 
 @media screen and (max-width: 720px) {
   .gpslogo {
-    padding: 14px 14px 15px 14px;
+    padding: 14px 17px 15px 17px;
+    width: 10%;
   }
 
   .searchform {
     max-width: 100% !important;
   }
 
-  .search-field {
-    width: unset !important;
-  }
-
   .formbutton {
     display: none;
+    position: absolute;
   }
 
   .searchbutton {
-    width: 40px;
+    width: 50px;
     border: 0 none;
     background-color: #0065fc;
     height: 48px;
@@ -549,8 +547,8 @@ section i {
     color: white;
     font-weight: bold;
     display: unset;
-    position: relative;
-    right: 15px
+    position: absolute;
+    right: 20px
   }
 
   .filters> p {
@@ -567,6 +565,11 @@ section i {
 
   .globalfooter {
     flex-wrap: wrap;
+  }
+
+  footer div ul {
+    padding-left: 20px !important;
+    
   }
 
 }
